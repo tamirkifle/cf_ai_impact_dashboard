@@ -1,0 +1,19 @@
+name = "cf-impact-dashboard"
+main = "src/worker.js"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "cf-impact-metrics"
+database_id = "YOUR_DATABASE_ID"
+
+[[durable_objects.bindings]]
+name = "TRAFFIC_SIMULATOR"
+class_name = "TrafficSimulator"
+
+[ai]
+binding = "AI"
+
+[site]
+bucket = "./dist"

@@ -1,0 +1,27 @@
+{
+  "name": "cf-impact-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "vite build",
+    "deploy": "wrangler deploy",
+    "test:api": "node ./scripts/test-api.js",
+    "db:init": "wrangler d1 create cf-impact-metrics",
+    "db:migrate": "wrangler d1 migrations apply cf-impact-metrics",
+    "lint": "echo \"Add linting if needed\""
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240117.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "vite": "^5.0.0",
+    "wrangler": "^3.22.0"
+  }
+}
