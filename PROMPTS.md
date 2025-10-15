@@ -1,28 +1,7 @@
 # Conversation Prompts Summary
 ## Cloudflare Software Engineering Internship Project Development
 
-### 1. Initial Research Request
-**Prompt:** "https://blog.cloudflare.com/ Why are you interested in Cloudflare's Software Engineering Internship? What products or features are you interested in building? find something distributed systems maybe a database"
-
-**Purpose:** Research Cloudflare's technology stack, specifically distributed systems and database products for internship application.
-
----
-
-### 2. Response Refinement - Conciseness
-**Prompt:** "Give me a distilled 50 words max response"
-
-**Purpose:** Create a concise, impactful response for the application form.
-
----
-
-### 3. Response Refinement - Confidence
-**Prompt:** "Be more confident. Say I want to build this, i want to tackle these problems"
-
-**Purpose:** Reframe response with stronger, more assertive language showing enthusiasm and determination.
-
----
-
-### 4. Optional Assignment Requirements
+### 1. Assignment Requirements
 **Prompt:** 
 ```
 Optional Assignment: See instructions below for Cloudflare AI app assignment. SUBMIT GitHub repo URL for the AI project here. (Please do not submit irrelevant repositories.)
@@ -44,43 +23,43 @@ Come up with what to build!
 
 ---
 
-### 5. Project Feasibility Check
+### 2. Project Feasibility Check
 **Prompt:** "can we demonstrate this easily... if not come up with another idea. maybe something realistic like an intern project and something cloudflare relates to. Im thinking something that generates cool fake data using a cool schema at the start randomly and then you query it. Give it a theme and maybe something cloudflare related things. Maybe creates users all over the world and then we simulate their usage and animate it etc... think around this"
 
 **Purpose:** Pivot to a more demonstrable project with visual appeal and Cloudflare relevance.
 
 ---
 
-### 6. Core Value Proposition Focus
+### 3. Core Value Proposition Focus
 **Prompt:** "maybe make it cloudflare value proposition. without cloudflare with cloudflare comparison. make that the core thing"
 
 **Purpose:** Refocus project on clearly demonstrating Cloudflare's value through direct comparison.
 
 ---
 
-### 7. Implementation Planning
+### 4. Implementation Planning
 **Prompt:** "Explain how you plan on building this... how confident are you in delivering this. (1 -10). No coding yet"
 
 **Purpose:** Assess technical feasibility and create detailed implementation plan with confidence level.
 
 ---
 
-### 8. Simplification to MVP
+### 5. Simplification to MVP
 **Prompt:** "Simplify for the first MVP and get it to a 10/10 confidence. Do some search on the internet for materials"
 
 **Purpose:** Reduce scope to ensure deliverability while maintaining core value demonstration.
 
 ---
 
-### 9. Technical Documentation Request
+### 6. Technical Documentation Request
 **Prompt:** "Ok now generate a HLD and LLD detailed document that we will use to build this from scratch as an artifact."
 
 **Purpose:** Create comprehensive technical documentation for implementation.
 
-### 10. Optimize for Codex
+### 7. Optimize for Codex
 **Prompt:** "Transformed this design document into the files needed for OpenAI Codex CLI."
 
-### 11. OpenAPI Codex Prompt
+### 8. OpenAPI Codex Prompt
 **Prompt:**
 """
 Build the complete Cloudflare Performance Impact Dashboard project based on the specifications in AGENTS.md, HLD.md, and LLD.md. 
