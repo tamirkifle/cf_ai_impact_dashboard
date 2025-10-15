@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "wrangler dev",
+    "frontend:dev": "vite",
     "build": "vite build",
     "deploy": "wrangler deploy",
     "test:api": "node ./scripts/test-api.js",
