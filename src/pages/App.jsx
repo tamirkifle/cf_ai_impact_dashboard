@@ -122,12 +122,15 @@ const App = () => {
       }
       const data = await response.json();
       setMetrics(data.metrics ?? []);
+      if (!aiExplanation && data.metrics?.[0]?.ai_explanation) {
+        setAiExplanation(data.metrics[0].ai_explanation);
+      }
       setError(null);
     } catch (err) {
       console.error('fetchMetrics failure', err);
       setError('Unable to load metrics. Retrying automatically.');
     }
-  }, []);
+  }, [aiExplanation]);
 
   const fetchStatus = useCallback(async () => {
     try {
